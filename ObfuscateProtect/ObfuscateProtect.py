@@ -30,6 +30,11 @@ class ObfuscateProtect:
         The main obfuscator class. Takes the text to be obfuscated and an optional mode and if a log statement should
         be printed on the obfuscation process.
         """
+        
+        existed = text in self._dict_of_used_strings.keys()
+
+        if existed and verbose:
+            print("Plain text '{}' existed previously. Using old value '{}'.".format(text, obfuscated_text))
 
         obfuscated_text = None
 
@@ -48,12 +53,8 @@ class ObfuscateProtect:
             obfuscated_text = self._get_color_word_string(text)
 
         # If verbose has been set then print information on the obfuscation
-        if verbose == True:
-
-            if text in self._dict_of_used_strings.keys():
-                print("Plain text '{}' existed previously. Using old value '{}'.".format(text, obfuscated_text))
-            else:
-                print("Plain text '{}' obfuscated to '{}', using mode '{}'.".format(text, obfuscated_text,
+        if verbose and not existed:
+            print("Plain text '{}' obfuscated to '{}', using mode '{}'.".format(text, obfuscated_text,
                                                                                     self._modes[mode]))
         return obfuscated_text
 
