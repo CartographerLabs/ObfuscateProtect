@@ -34,7 +34,7 @@ class ObfuscateProtect:
         existed = text in self._dict_of_used_strings.keys()
 
         if existed and verbose:
-            print("Plain text '{}' existed previously. Using old value '{}'.".format(text, obfuscated_text))
+            print("Plain text '{}' existed previously. Using old value '{}'.".format(text, self._dict_of_used_strings[text]))
 
         obfuscated_text = None
 
