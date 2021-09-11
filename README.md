@@ -15,7 +15,7 @@ obfuscator.obfuscate("string", verbose=True)
 ```
 Output:
 ```bash
-Plain text 'string' existed previously. Using old value '41343fa96913459ebf3e9c54544912ab'.
+Plain text 'string' obfuscated to '0a77d64c35ea4a2ea658b2e8fc5d8c26', using mode 'uuid'.
 ```
 More complex, using a list of names:
 ```python
