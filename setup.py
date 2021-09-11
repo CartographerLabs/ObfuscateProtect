@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="ObfuscateProtect",
-    version="0.0.1",
+    version="0.0.2",
     author="James Stevenson",
     author_email="hi@jamesstevenson.me",
     description="A tool for quickly obfuscating sensitive, violent, or extremist text to protect the researcher or analyst viewing the content.",
