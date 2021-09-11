@@ -1,7 +1,7 @@
 # ObfuscateProtect
 A tool for quickly obfuscating sensitive, violent, or extremist text to protect the researcher or analyst viewing the content - while keeping it in a unique form so that patterns can still be observed.
 
-## Instalation 
+## Installation 
 ```shell
 python -m pip install git+https://github.com/CartographerLabs/ObfuscateProtect.git
 ```
