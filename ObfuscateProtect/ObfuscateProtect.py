@@ -25,7 +25,7 @@ class ObfuscateProtect:
         """
         self._default_mode = default_mode
 
-    def obfuscate(self, text, mode=1, verbose=True, should_lower = True):
+    def obfuscate(self, text, mode=1, verbose=False, should_lower = True):
         """
         The main obfuscator class. Takes the text to be obfuscated and an optional mode and if a log statement should
         be printed on the obfuscation process.
