@@ -55,6 +55,7 @@ class ObfuscateProtect:
             else:
                 print("Plain text '{}' obfuscated to '{}', using mode '{}'.".format(text, obfuscated_text,
                                                                                     self._modes[mode]))
+        return obfuscated_text
 
     def _get_color_word_string(self, text):
         """
